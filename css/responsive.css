@@ -1,8 +1,5 @@
 @media only screen and (max-width: 767px) {
-  body {
-    background-color: red;
-  }
-  .navbar-default {
+    .navbar-default {
     display: none;
   }
   .purchase-now .col-md-3 {
@@ -12,9 +9,7 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  body {
-    background-color: blue;
-  }
+  
   .header-belarus {
     display: none;
   }
@@ -24,9 +19,7 @@
 }
 
 @media only screen and (min-width: 992px) {
-  body {
-    background-color: green;
-  }
+  
 }
 
 @media only screen and (min-width: 1200px) {
