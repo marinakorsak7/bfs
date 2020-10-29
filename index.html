@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     </head>
 
@@ -58,8 +59,9 @@
                        <p> Because such a showdown would serve no one’s interests, all stakeholders should take care to consult with each other and coordinate their policies, even as they do what they can to help Belarus and Belarusians.</p>
                      </div>
                     <div class="header-btns">
-                       <a class="btn btn-d animate__animated animate__fadeInLeft" href="#">Donate</a>
-                       <a class="btn btn-tour animate__animated animate__fadeInRight" href="#">Tour
+                      <!--animate__animated animate__fadeInLeft animate__animated animate__fadeInRight--->
+                       <a class="btn btn-d" data-aos="fade-right" href="#">Donate</a>
+                       <a class="btn btn-tour" data-aos="fade-left" href="#">Tour
                         <i class="fas fa-angle-down"></i></a>
                          </div>
                 </div>
@@ -88,28 +90,34 @@
               <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="about-belarus animate__animated animate__fadeInLeft">
+                      <!--animate__animated animate__fadeInLeft--->
+                        <div class="about-belarus" data-aos="fade-right">
                           <img src="img/41d933dd09c3428087d65434377d5c9e.jpg" alt="about-belarus">
                         </div>
                     </div>
-                    <div class="col-md-6 animate__animated animate__fadeInRight">
+                    <!-- animate__animated animate__fadeInRight--->
+                    <div class="col-md-6" data-aos="fade-left">
                       <div class="choose-us-title">
                         <h2> Why Help Us?</h2>
                         <p>Supporting all these people and organizations will cost tens of millions of euros, but it would significantly ease the huge financial burden facing those who have opposed the regime.</p>
                         
                       </div>
                       <div class="choose-us-des"> 
-                      <div class="choose-us-item animate__animated animate__fadeInUp">
+                        <!--animate__animated animate__fadeInUp--->
+                      <div class="choose-us-item" data-aos="fade-up">
                         <div><i class="fa fa-bolt"></i></div>
                          <h3>Choose Us</h3>
                          <p>Today, more than ever, it is important to support everyone who has lost their jobs because of their beliefs and to extend a hand of solidarity with those who want to live in free and democratic Belarus.</p>
                       </div>
-                          <div class="choose-us-item animate__animated animate__fadeInUp">
+                        <!--animate__animated animate__fadeInUp--->
+                          <div class="choose-us-item"data-aos="fade-up">
                         <div><i class="fa fa-bullhorn"></i></div>
                          <h3>Support Known Victims Of The Regime</h3>
                          <p>Human rights defenders need funds to keep organizations running in the heat of this crackdown.</p>
                         </div>
-                          <div class="choose-us-item animate__animated animate__fadeInUp">
+
+                        <!--animate__animated animate__fadeInUp--->
+                          <div class="choose-us-item" data-aos="fade-up">
                         <div><i class="fa fa-flag-o"></i></div>
                          <h3>Be Present On The Ground</h3>
                          <p>The Fund accepts applications from those in need and distributes this assistance based on the principles of openness and transparency, accountability for victims and respect for citizen s' rights and freedoms.</p>
@@ -136,7 +144,8 @@
             <div class="testimonial-overlay">
              <div class="container">
                 <div class="row">
-                  <div class="col-md-12 animate__animated animate__bounceInDown">
+                  <!--animate__animated animate__bounceInDown--->
+                  <div class="col-md-12" data-aos="zoom-in-down">
                     <div id="carousel-testimonial" class="carousel slide" data-ride="carousel">
                      <ol class="carousel-indicators">
                        <li data-target="#carousel-testimonial" data-slide-to="0" class="active"></li>
@@ -210,7 +219,7 @@
          <div class="features-inner-wrapper">
             <div class="container">
              <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-right">
                  <div class="left-feature-item">
                      <div class="left-feature-item-icon">
                      <i class="fas fa-edit"></i>
@@ -248,12 +257,12 @@
                  <div class="col-md-4">
                   <div class="feature-iphone">
                      
-                     <img src="img/3.jpg" alt="feature">
+                     <img src="img/3.jpg" data-aos="zoom-in" alt="feature">
                      </div>
                  </div>
                  
                  
-                 <div class="col-md-4">
+                 <div class="col-md-4"  data-aos="fade-left">
                   <div class="right-feature-item">
                      <div class="right-feature-item-icon"> 
                       <i class="fas fa-magic"></i>
@@ -288,7 +297,7 @@
         
         <section class="purchase-now">
           <div class="container">
-            <div class="row">
+            <div class="row" data-aos="fade-right">
                <div class="col-md-9">
                 <p>All forms of support and solidarity for Belarusians, from mental to financial, are needed more than ever. It is important to be ready for a dialogue with local and international authorities.</p>
                 
@@ -588,6 +597,9 @@
       
         <script src="js/jquery.bxslider.min.js"></script>
                 <script src="js/custom.js"></script>
-
+                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <script>
+                  AOS.init();
+                </script>
     </body>
 </html>
